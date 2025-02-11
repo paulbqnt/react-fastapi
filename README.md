@@ -8,18 +8,25 @@
 - npm
 - SQLite (pre-installed with Python)
 
+### 0. Clone the repo (via your terminal/command prompt)
+```shell
+git clone https://github.com/paulbqnt/react-fastapi.git
+```
+
+
 
 ### 1. Set up the backend
 
 a. Create the virtual env
 
 ```shell
-python3 -m venv venv
+# react-fastapi/backend
+python -m venv venv
 ```
 
 b. Activate it
 ```shell
-.\venv\Scripts\activate # Windows
+.\venv\Scripts\activate.bat # Windows
 
 source ./venv/bin/activate # Mac/Linux
 ```
@@ -29,8 +36,9 @@ c. Install the dependencies
 pip install -r requirements.txt
 ```
 
-d. Run the API (from backend/src)
+d. Run the API 
 ```shell
+# backend/
 uvicorn src.main:app --reload
 ```
 
