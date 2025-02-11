@@ -29,9 +29,9 @@ c. Install the dependencies
 pip install -r requirements.txt
 ```
 
-d. Run the API
+d. Run the API (from backend/src)
 ```shell
-python main.py
+uvicorn src.main:app --reload
 ```
 
 ### 2. Set up the frontend
