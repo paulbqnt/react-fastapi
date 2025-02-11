@@ -9,10 +9,42 @@
 - SQLite (pre-installed with Python)
 
 
-### Run locally
+### 1. Set up the backend
 
-1. Create a python venv
-2. Install the npm packages
-3. launch the fastapi
-4. launch the web-server
+a. Create the virtual env
 
+```shell
+python3 -m venv venv
+```
+
+b. Activate it
+```shell
+.\venv\Scripts\activate # Windows
+
+source ./venv/bin/activate # Mac/Linux
+```
+
+c. Install the dependencies
+```shell
+pip install -r requirements.txt
+```
+
+d. Run the API
+```shell
+python main.py
+```
+
+### 2. Set up the frontend
+
+a. Install the packages from the $src$ folder
+
+```shell
+cd frontend
+npm install
+```
+
+b. Run the App (still from src/)
+
+```shell
+npm run dev
+```
