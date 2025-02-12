@@ -10,7 +10,7 @@ def init_db():
     """
     Initialize the database by creating all tables based on the SQLModel models.
     """
-    import src.models.task  # Import your models to ensure they are registered with SQLModel
+    import models.task  # Import your models to ensure they are registered with SQLModel
     SQLModel.metadata.create_all(engine)
 
 def get_session():

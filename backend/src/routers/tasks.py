@@ -1,10 +1,10 @@
 from fastapi import APIRouter, Depends, HTTPException
 from sqlmodel import Session
 from typing import List
-from src.models.task import TaskCreate, TaskUpdate, TaskRead
-from src.db.database import get_session
-from src.services.task_service import TaskService
-from src.repositories.task_repository import TaskRepository
+from models.task import TaskCreate, TaskUpdate, TaskRead
+from db.database import get_session
+from services.task_service import TaskService
+from repositories.task_repository import TaskRepository
 
 router = APIRouter(
     prefix="/tasks",

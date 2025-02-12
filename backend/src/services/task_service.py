@@ -1,5 +1,5 @@
-from src.repositories.task_repository import TaskRepository
-from src.models.task import TaskCreate, TaskUpdate
+from repositories.task_repository import TaskRepository
+from models.task import TaskCreate, TaskUpdate
 
 class TaskService:
     def __init__(self, task_repository: TaskRepository):

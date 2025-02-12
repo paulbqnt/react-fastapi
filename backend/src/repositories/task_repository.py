@@ -1,5 +1,5 @@
 from sqlmodel import Session, select
-from src.models.task import Task, TaskCreate, TaskUpdate
+from models.task import Task, TaskCreate, TaskUpdate
 
 class TaskRepository:
     def __init__(self, db: Session):
