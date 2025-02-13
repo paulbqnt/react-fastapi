@@ -4,6 +4,13 @@ This project provides a quick plug-and-play app with a FastAPI backend and a Rea
 
 ---
 
+### Stack
+- backend : Python(Fast-API)
+- front : React Vite, Material UI
+
+
+---
+
 ### Prerequisites
 
 Make sure you have the following installed before setting up the project:
